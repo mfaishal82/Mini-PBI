@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Faisal - Portfolio Mini PBI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">MF</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button >
+                <svg width="36" height="25" viewBox="0 0 36 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="6" y1="12.5" x2="36" y2="12.5" stroke="#1F1F1F"/>
+                    <line x1="12" y1="24.5" x2="36" y2="24.5" stroke="#1F1F1F"/>
+                    <line y1="0.5" x2="36" y2="0.5" stroke="#1F1F1F"/>
+                </svg>
+            </button>
+            <div class="nav-mobile">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 id="myElement"></h1>
+            <p class="role">Web Developer</p>
+            <p class="description">Passionate about creating modern, responsive, and user-friendly web applications using the latest technologies.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/assets/images/image 2.png" alt="Muhammad Faisal">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Muhammad Faisal, a passionate web developer with a strong foundation in both front-end and back-end technologies. I love creating digital experiences that are not only visually appealing but also functional and user-friendly.</p>
+                    <p>My journey in web development started with a curiosity about how websites work, and it has evolved into a passion for building innovative solutions. I enjoy working with modern frameworks and technologies to bring ideas to life.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or learning about the latest trends in web development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div id="projectsContainer">
+                <!-- Projects will be rendered here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>mfaishal.works@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+62 838 7665 7601</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>github.com/mfaishal82</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/mfaishal82" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/mfaishal82" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/mf______98" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2025 Muhammad Faisal</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/typeit/dist/index.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/js/project.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
