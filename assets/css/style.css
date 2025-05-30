@@ -399,9 +399,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
+  /* .nav-links {
     display: none;
-  }
+  } */
 
   .hero h1 {
     font-size: 2.5rem;
@@ -431,6 +431,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+  
   .container {
     padding: 0 1rem;
   }
