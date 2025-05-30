@@ -16,8 +16,15 @@ body {
   top: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   z-index: 1000;
   padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -35,10 +42,6 @@ body {
   color: #2563eb;
 }
 
-.navbar .nav-container button {
-  display: none;
-}
-
 .nav-links {
   display: flex;
   list-style: none;
@@ -54,23 +57,6 @@ body {
 
 .nav-links a:hover {
   color: #2563eb;
-}
-
-.nav-mobile {
-  display: none;
-  height: 100vh;
-  width: auto;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background: white;
-  z-index: 999;
-}
-
-.nav-mobile .nav-links {
-  flex-direction: column;
-  padding: 2rem;
-  gap: 1.5rem;
 }
 
 .hero {
@@ -131,10 +117,14 @@ body {
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease 0.6s both;
 }
 
 .cta-button:hover {
   background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
 }
 
 .section {
@@ -176,6 +166,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   border: 8px solid white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .about-text {
@@ -217,8 +208,13 @@ body {
 .swiper-slide {
   background: white;
   border-radius: 20px;
-  border: #d0d1d1 1px solid;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-10px);
 }
 
 .project-image {
@@ -270,6 +266,14 @@ body {
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #1d4ed8;
+}
+
+.swiper-pagination-bullet {
+  background: #2563eb;
 }
 
 .contact {
@@ -375,23 +379,28 @@ body {
   color: white;
   border-radius: 50%;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .social-links a:hover {
   background: #2563eb;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
-  /* .nav-links {
+  .nav-links {
     display: none;
-  } */
-
-  .navbar .nav-container button {
-    display: hidden;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #2563eb;
   }
 
   .hero h1 {
@@ -422,9 +431,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  .logo {
-    display: none;
-  }
   .container {
     padding: 0 1rem;
   }
